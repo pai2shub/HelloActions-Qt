@@ -32,7 +32,7 @@ jobs:
           version: ${{ matrix.qt_ver }}
           cached: 'false'
       - name: ubuntu install GL library
-        run: sudo apt-get install -y libglew-dev libglfw3-dev
+        run: sudo apt-get install -y libglew-dev libglfw3- tree
       - uses: actions/checkout@v2
         with:
           fetch-depth: 1
@@ -40,3 +40,4 @@ jobs:
         run: |
           qmake
           make
+          tree
