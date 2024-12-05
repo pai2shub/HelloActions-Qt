@@ -6,7 +6,7 @@ Window {
     visible: true
     width: 640
     height: 480
-    title: qsTr("HelloActions-Qt")
+    title: qsTr("HelloActions-Qt build by github Runner")
     Text {
         text: "Hello " + Qt.platform.os
         anchors.centerIn: parent
